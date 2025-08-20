@@ -78,7 +78,7 @@ function g {
 
 #region Ereignisse-$button
 $button_Clicked = {
-    [System.Windows.Forms.MessageBox]::Show("Benjamin Boysen, der Design-Künstler, ist toll!")
+    [System.Windows.Forms.MessageBox]::Show("Text!")
     $button.Text = $button.Name + " geklickt"
     $button.Font = [System.Drawing.Font]::new("Arial", 12.0)
 
@@ -95,7 +95,7 @@ $button_MouseHovered = {
 
 #region Ereignisse-button2_Btn
 $button2_Btn_Clicked = {
-    [System.Windows.Forms.MessageBox]::Show("Benjamin Boysen, der Design-Künstler, ist toll!")
+    [System.Windows.Forms.MessageBox]::Show("Text!")
     $button2_Btn.Text = $button2_Btn.Name
     $button2_Btn.Remove_Click($button2_Btn_Clicked)
     
