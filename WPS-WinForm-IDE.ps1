@@ -1,6 +1,7 @@
 <#
 .description
 IDE in WPS for WPS.NET Winforms 
+
 #>
 
 # Assemblies hinzufügen - Anfang
@@ -63,8 +64,10 @@ $Eingabe_Edt.Location = New-Object System.Drawing.Point(50,80)
 function g {
     param (
         #OptionalParameters
+        [Parameter(Mandatory=$false)]
+        [string]$s = [string]("Fairwell")
     )
-    [string]$s = [string]("Fairwell");
+    
         for ($i = 0; $i -lt $s.Length; $i++) {
             $Eingabe_Edt.Text = $s.Substring(0,$i+1); Start-Sleep -Milliseconds 500;    
         }
